@@ -1,0 +1,30 @@
+@use "../../foundation/global" as g;
+
+.c-inner {
+	margin: 0 auto;
+}
+
+.c-line{
+    border: solid 1px white;
+    width: 17.5vw;
+    position: absolute;
+    top: 19.5vw;
+    left: 11.666666666666666 vw;;
+
+    @include g.mq(md){
+    width: 8.992805755395683vw;
+    }
+
+        &__label{
+            border: solid 2px rgba(255, 255, 255, 1);
+            width: 33.89px;           
+                
+          
+          @include g.mq(md){
+            width: 35.94px;
+        }
+        @include g.mq(lg){
+           width: 63px;
+   }
+}
+}

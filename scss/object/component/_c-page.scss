@@ -1,0 +1,22 @@
+@use '../../foundation/global' as g;
+
+.c-page{
+    margin-right: 2vw;
+    font-size: 1.7vw;
+    font-family: Roboto;
+    display: flex;
+
+ }
+
+ p.c-page__p {
+    margin-left: 2vw;
+    font-size: 1.7vw;
+    font-family: Roboto, sans-serif;
+    color: rgba(112, 112, 112, 1);
+ }
+
+ li.c-page__number.c-border:last-child {
+    margin-right: unset;
+ }
+
+ 

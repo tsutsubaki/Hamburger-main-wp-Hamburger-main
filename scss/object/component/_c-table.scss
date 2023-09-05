@@ -1,0 +1,52 @@
+@use"../../foundation/global" as g;
+
+.c-table {
+    border-collapse: collapse;
+    border: solid 1px rgba(112, 112, 112, 1);
+    font-size: 2.666666666666667vw;
+    margin-bottom: 9vw;
+    background-color: rgba(255, 255, 255, 1);
+
+    @include g.mq(lg){
+        width: 100%;
+        height: 40vw;
+        font-size: 1.6vw
+              
+        }
+
+    &__tr
+    {
+        border: solid 1px rgba(112, 112, 112, 1);
+
+    }
+
+}       
+
+    td {
+           
+            &:first-of-type{
+                padding: 3vw 17vw 3vw 4vw;
+                border-right: solid 1px;
+
+                @include g.mq(lg){
+                    padding: 2vw;
+                    width: 40%;
+
+                          
+                }
+
+             }
+
+            &:last-of-type{
+                padding: 3vw 45vw 3vw 4vw;
+
+                @include g.mq(lg){
+                    padding: 2vw;
+                    width: 60%;
+                          
+                    }
+            }
+    }
+
+
+

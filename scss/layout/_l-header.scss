@@ -1,0 +1,84 @@
+@use '../foundation/global' as g;
+
+#l-header{
+position: relative;
+width: 100%;
+font-family: 'Roboto';
+color: #707070;
+background-color: rgba(255, 247, 239, 1);
+height: 215px;
+       
+    @include g.mq(md){
+        @include g.font-size(22);
+        
+               
+    }
+    @include g.mq(lg){
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+          @include g.font-size(22);
+          height: 10.972956vw;
+          
+        }
+  
+    &__content{
+        padding-top: 30px;
+
+        @include g.mq(lg){
+            padding-top: 0px;
+             
+           }
+
+
+    }
+   
+    &__menu{
+   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    @include g.font-size(20);
+    color: #707070;
+    position: absolute;
+    right: 3.133333vw;
+    margin-top: -25px;
+    
+
+   
+    @include g.mq(md){
+        @include g.font-size(34);
+       
+    }
+    @include g.mq(lg){
+        display: none;
+         
+       }
+    
+}      
+    &__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: bold;
+    font-weight: 700;
+    @include g.font-size(40);
+     color: #707070;
+    
+     @include g.mq(lg){
+        margin: 3vw;
+        font-size: 3.3333333333vw;;
+         
+       }
+}
+    }
+
+
+.l-main{
+    background-color: rgba(255, 253, 250, 1);
+
+    &__content{
+     
+    }
+}

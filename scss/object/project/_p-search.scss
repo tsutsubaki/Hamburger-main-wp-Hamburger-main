@@ -1,0 +1,88 @@
+@use "../../foundation/global" as g;
+
+.c-search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21px;
+
+    @include g.mq(md){
+   
+        
+        
+     }
+     @include g.mq(lg){
+        margin-top: 0px;
+     }
+    }
+i.fa-solid{
+    position: absolute;
+    @include g.font-size(25);
+    margin: 10px 264px 10px 9px;
+
+    @include g.mq(md){
+       
+    }
+}
+/*input {*/
+
+#sbox1{
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 10px 8px 10px 10px;
+    width: 216px;
+    height: 46px;
+    padding-left: 40px;
+
+       
+    @include g.mq(md){
+        width: 47.4820143885vw;
+           
+    }
+    @include g.mq(lg){
+        width: 20.625vw;
+         
+        }
+    
+    }
+
+    ::placeholder{
+        font-size: medium;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+ #sbtn1{
+    background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
+    border: 1px solid #707070;
+    border-radius: 10px;
+    width: 90px;
+    height: 46px;
+    margin-left: 16px;
+    font-family: "mplus-1mn-bold";
+    color: rgba(112, 112, 112, 1);
+    @include g.font-size(16);
+    
+    @include g.mq(md){
+        width: auto;
+        min-width: 136px;
+        
+     }
+     @include g.mq(lg){
+        
+          
+         }
+
+       }
+    
+
+    
+    form#form1{
+        display: flex;
+       margin: 2.5756600128783vw 0 2.5112685125563425vw 1.7385705086928525vw;
+       
+       @include g.mq(lg){
+        margin:0 40px 0 0;
+       }
+    }

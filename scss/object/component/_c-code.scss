@@ -1,0 +1,24 @@
+@use"../../foundation/global" as g;
+
+.c-single__code{
+    background-color: rgba(245, 245, 245, 1);
+    color:rgba(60, 42, 16, 1);
+    font-family: "M+ 1m, Franklin Gothic Medium, Arial Narrow, Arial, sans-serif";
+    font-size: 2.66666666666666vw;
+    padding: 10vw 66vw 10vw 11vw;
+    margin: 1vw 0 7vw;
+    display: inline-block;   
+
+    @include g.mq(lg){
+         font-size: 1.6vw;
+         padding: 3vw 40vw 3vw 7vw;    
+        }
+}   
+
+.code{
+    padding: 1vw 0 1vw;
+}
+
+.code1{
+    padding-left: 5vw;
+}

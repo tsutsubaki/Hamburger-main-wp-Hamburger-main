@@ -1,0 +1,14 @@
+@use "../../foundation/global" as g;
+
+.c-main{
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+
+    @include g.mq(lg){
+        position: static;
+        height: 100%;
+        overflow: visible;
+
+    }
+}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@use "./foundation/base";
+@use "./foundation/global";
+
+@use "./layout/l-archive";
+@use "./layout/l-contents";
+@use "./layout/l-header";
+@use "./layout/l-footer";
+@use "./layout/l-side";
+
+
+@use "./object/component/c-line";
+@use "./object/component/c-logo";
+@use "./object/component/c-inner";
+@use "./object/component/c-main";
+@use "./object/component/c-code";
+@use "./object/component/c-table";
+
+
+@use "./object/project/p-frontpage";
+@use "./object/project/p-search";
+
+
+//archive
+@use "./object/component/c-button";
+@use "./object/component/c-page";
+
+@use "./object/project/p-archive";
+
+//single
+@use "./object/project/p-single";
+@use "./layout/l-single";
+
+//page
+@use "./object/project/p-page";
+
+

@@ -1,0 +1,66 @@
+@use"../foundation/global" as g;
+
+.l-single__bottom{
+    margin-bottom: 7vw;
+
+    @include g.mq(lg){
+      margin-bottom: 6vw;
+          
+    }
+}
+
+.l-single__top{
+  margin-top: 5vw;
+}
+
+.l-single__grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.l-single__list__style{
+    margin: 4vw;
+    font-size: 2.666666666666667vw;
+    color: rgb(112, 112, 112);
+
+    @include g.mq(lg){
+      font-size: 1.6vw;
+            
+      }
+
+    &:nth-of-type(2){
+      margin-left: 8vw;
+    }
+}
+
+.l-single__list__inner{
+  margin-top: 9vw;
+}
+
+.l-single__bottom__background{
+  background-color: rgba(255, 253, 250, 1);
+}
+
+.l-single__bold{
+  font-size: 2.666666666666667vw;
+  margin-bottom:20vw;
+  font-weight: 700;
+}
+
+.l-single__grid__layout{
+
+  @include g.mq(md){
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw 2vw;
+  }
+
+  @include g.mq(lg){
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+          
+    }
+
+  
+}

@@ -1,0 +1,109 @@
+@use '../../foundation/global' as g;
+
+.p-back__forward {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw 3vw;
+
+    @include g.mq(md){
+      display: none;
+      
+   }
+  
+   @include g.mq(lg){
+      
+  
+ }
+}
+
+ button.p-button {
+    /* text-align: center; */
+    display: block;
+    margin: 4vw auto;
+    padding: 2vw 5.5vw;
+    font-size: 3.3333333333333335vw;
+    border-radius: 4vw;
+    color: rgba(112, 112, 112, 1);
+   
+    @include g.mq(md){
+    font-size: 1.8vw;
+    padding: 1.2vw 3.5vw;
+    margin: 0 auto ;
+ }
+
+ @include g.mq(lg){
+  font-size: 1.00vw;
+  padding: 1.7vw 5.5vw;
+  color: rgb(112, 112, 112);
+  font-weight: 500;
+
+}
+ }
+
+
+ .c-page__link{
+   display: none;
+
+   @include g.mq(md){
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 11vw 0 5vw;
+   }
+  
+   @include g.mq(lg){
+      
+  
+  }
+ }
+
+ .page-number{
+   @include g.mq(md){
+      display: flex;
+      
+    }
+   
+    @include g.mq(lg){
+       
+   
+   }
+ }
+
+ .c-border{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+    border-image: initial;
+ }
+
+ .c-page__number {
+   color: rgb(112, 112, 112);
+   background-color: rgb(255, 255, 255);
+   font-size: 1.8vw;
+   font-family: Roboto, sans-serif;
+   font-weight: bold;
+   padding: 5px 12px;
+   margin-right: 1.5vw;
+
+   @include g.mq(lg){
+    padding: 0.1951219512195122vw
+     0.975609756097561vw;
+    }
+}
+ 
+
+//*singleボタン://
+
+.c-single__button{
+    padding: 4vw 22vw;
+    font-size: 1.666667vw;
+    color: rgba(60, 42, 16, 1);
+    margin-bottom: 7vw;
+    border-radius: 10px;
+    border: solid 1px;
+    background-color: rgba(222, 216, 211, 1);
+
+    @include g.mq(lg){
+    padding: 3vw 11vw;
+}
+}
