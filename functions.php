@@ -6,7 +6,7 @@
     add_theme_support( 'post-thumbnails' ); //アイキャッチ画像追加
 
 
-    register_nav_menus(array(//メニュー位置追加
+    register_nav_menus(array(//メニュー位置追加　・上かサイドか下か
         'global_nav'=>esc_html__('global navigation','Hamburger'),
         'sidebar_nav'=>esc_html__('sidebar navigation','Hamburger'),
         'footer_nav'=>esc_html__('footer navigation','Hamburger'),
