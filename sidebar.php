@@ -2,18 +2,21 @@
   <aside class="l-sidebar__area">
       <div class="l-sidebar__background"></div><!--background-color-->
 
+<div class="l-sidebar__nav">
 
-  <h2 class="l-sidebar__menu">MENU 
+
+  <h2 class="l-sidebar__menu">MENU </h2>
     
 	<?php
 	wp_nav_menu( array(
 		'container'       => 'nav',
-		'container_class' => 'nav-gloabl',
+		'container_class' => 'l-sidebar__top-title',
 		'theme_location'  => 'sidebar_nav',
 		
 	) );
 ?>
-     </h2>
+  
+  </div>
 
 
       <!-- <section class="nav_menu"> -->
