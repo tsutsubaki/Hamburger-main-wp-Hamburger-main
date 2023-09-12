@@ -222,6 +222,3 @@
 
 </html>
 
-/*
-Template Name: HAMBURGER singleページ
-*/

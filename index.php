@@ -87,7 +87,3 @@
       
 
   
-
-      /*
-Template Name: HAMBURGER indexページ
-*/
