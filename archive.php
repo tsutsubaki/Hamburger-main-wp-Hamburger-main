@@ -1,11 +1,20 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: HAMBURGER archiveページ
+*/
+?>
 
-      <div class="l-main">
+<?php if (  is_archive() ) : ?> <?php endif; ?>
+
+<?php get_header(); ?>  <!-- header.php読み込み -->
+
+<div class="l-main">
         <div class="l-main__content">
           <div class="c-top__caption p-archive__caption">
             <div class="c-top__title p-top__title">Menu:</div>
             <div class="p-title">チーズバーガー</div>
           </div>
+
 
           <div class="p-contents">
             <div class="p-center__caption">
@@ -19,11 +28,6 @@
             <a href="/single.html">
 
 
-            <?php
-    if( have_posts() ) : //1.投稿データがあるかの条件分岐。
-        while( have_posts() ) : // 2.表示する投稿データがあれば繰り返し処理開始
-            the_post(); //3.ループ処理に必要なカウント処理等
-
 
               <section class="p-figcaption__1 p-figcaption">
                 <figure class="p-archive__image">
@@ -31,7 +35,7 @@
                 </figure>
 
                 <div class="p-theme ">
-                  <div class="p-figcaption__title-1">チーズバーガー</div>
+                  <div class="p-figcaption__title-1"><?php echo CFS()->get('title');?></div>
                   <div class="p-second__title">小見出しが入ります</div>
                   <p class="p-theme__service">
                     テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -57,14 +61,7 @@
               </section>
             </a><!--single.html-->
 
-      
-          endwhile; // 5.繰り返し処理ここまで。投稿データがまだあればwhileに戻る。なければ終了
-          else : //6.投稿データがなければ
-              ?><p>表示する記事がありません</p><?php //7.ない時の処理
-          endif; ?> //8.条件分岐終了
-      ?>
-
-
+                
             <a href="/single.html">
               <section class="p-figcaption__3 p-figcaption">
                 <figure class="p-archive__image">
@@ -83,16 +80,18 @@
 
           </div><!--p-contents-->
 
+    
+
           <div class="p-back__forward">
             <a href="#" onclick="history.back()">
-              <<前へ< /a>
+              <<前へ</a>
                 <a href="#" onclick="history.forward()">次へ>></a>
           </div><!--p-back__forward-->
 
           <!--active-page-->
           <div class="c-page__link">
             <div class="c-page">page 1/10 <p class="c-page__p">
-                <<< /p>
+                <<</p>
             </div>
 
             <ul class="page-number">
@@ -114,73 +113,14 @@
         </div><!--l-main__content"-->
       </div><!--main-->
 
+    
+
       <div class="l-main-hide-contents"></div>
 
-      <footer class="l-footer p-archive__footer">
-
-        <a href="/page.html">
-          <p class="p-archive__footer__p">ショップ情報｜ヒストリー</p>
-        </a><!--page.html-->
-
-        <small class="l-footer_copyright p-archive__footer_copyright">Copyright: RaiseTeck</small>
-
-      </footer>
-    </main>
-
-    <!--サイドメニュー-->
-    <aside class="l-sidebar__area">
-      <div class="l-sidebar__background"></div><!--background-color-->
 
 
-      <div class="l-sidebar__nav">
-        <h2 class="l-sidebar__menu">Menu</h2>
-
-        <!--sidebar　✖️　-->
-        <span class="l-sidebar__close "></span>
-
-        <div class="l-sidebar__top-title">
-          <div class="l-sidebar__title">
-            <a href="#">バーガー</a>
-          </div>
-
-
-          <ul>
-            <li class="l-sidebar__item"><a href="#">ハンバーガー</a></li>
-            <li class="l-sidebar__item"><a href="#">チーズバーガー</a></li>
-            <li class="l-sidebar__item"><a href="#">テリヤキバーガー</a></li>
-            <li class="l-sidebar__item"><a href="#">アボガドバーガー</a></li>
-            <li class="l-sidebar__item"><a href="#">フィッシュバーガー</a></li>
-            <li class="l-sidebar__item"><a href="#">ベーコンバーガー</a></li>
-            <li class="l-sidebar__item"><a href="#">チキンバーガー</a></li>
-
-          </ul>
-        </div><!--l-sidebar__top-title-->
-
-        <div class="l-sidebar__title">
-          <a href="">サイド</a>
-        </div>
-
-        <ul>
-          <li class="l-sidebar__item"><a href="#">ポテト</a></li>
-          <li class="l-sidebar__item"><a href="#">サラダ</a></li>
-          <li class="l-sidebar__item"><a href="#">ナゲット</a></li>
-          <li class="l-sidebar__item"><a href="#">コーン</a></li>
-        </ul>
-
-        <div class="l-sidebar__title">
-          <a href="">ドリンク</a>
-        </div>
-
-        <ul>
-          <li class="l-sidebar__item"><a href="#">コーラ</a></li>
-          <li class="l-sidebar__item"><a href="#">ファンタ</a></li>
-          <li class="l-sidebar__item"><a href="#">オレンジ</a></li>
-          <li class="l-sidebar__item"><a href="#">アップル</a></li>
-          <li class="l-sidebar__item"><a href="#">紅茶(Ice/Hot)</a></li>
-          <li class="l-sidebar__item"><a href="#">コーヒー(Ice/Hot)</a></li>
-        </ul>
-
-      </div><!--l-side__nav-->
+      <?php get_footer(); ?>
+      <?php get_sidebar(); ?>
 
 
     </aside><!--l-sidebar__area-->
@@ -200,7 +140,3 @@
 </body>
 
 </html>
-
-/*
-Template Name: HAMBURGER archiveページ
-*/
