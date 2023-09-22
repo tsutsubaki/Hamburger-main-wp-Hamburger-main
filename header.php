@@ -34,9 +34,9 @@ jquery.min.js">
 
   -->
 
-       <?php wp_head(); ?>
+      <?php wp_head(); ?>
 
- </head>
+</head>
 
 <body <?php body_class(); ?>>
   <article class="c-wrapper ">

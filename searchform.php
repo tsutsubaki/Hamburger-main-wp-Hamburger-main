@@ -5,4 +5,7 @@
             <input id="sbtn1" class="button" type="submit" value="検索">
             <i class="fa-solid fa-magnifying-glass"></i>
           </form>
-        </div><!--c-search-box-->
+        </div><!-- c-search-box -->
+
+
+       

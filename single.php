@@ -1,4 +1,15 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: HAMBURGER single
+*/
+
+?>
+
+<?php if ( is_single() ) : ?>
+  
+
+
+<?php get_header(); ?>  <!-- header.php読み込み -->
 
       <div class="l-main">
         <div class="l-main__content">
@@ -145,8 +156,7 @@
         
           <?php get_footer(); ?>
       <?php get_sidebar(); ?>
-      
-
+    
     </aside><!--l-sidebar__area-->
     <!---サイドメニュー-->
 
@@ -161,3 +171,4 @@
 
 </html>
 
+<?php endif; ?>

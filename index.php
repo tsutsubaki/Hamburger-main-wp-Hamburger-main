@@ -1,5 +1,13 @@
+<?php
+/*
+Template Name: HAMBURGER index
+*/
+?>
 
-<?php get_header(); ?>
+<?php if( ( is_home() || is_front_page() ) && !is_paged() ) : ?>
+
+
+<?php get_header(); ?>  <!-- header.php読み込み -->
 
       <div class="l-main">
         <div class="l-main__content">
@@ -85,5 +93,5 @@
       <?php get_sidebar(); ?>
 
       
-
+      <?php endif; ?>
   

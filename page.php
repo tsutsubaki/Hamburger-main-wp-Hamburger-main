@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: HAMBURGER page
+*/
+?>
+
+<?php if ( is_page() ) : ?>
+
+<?php get_header(); ?>  <!-- header.php読み込み -->
 
       <div class="l-main">
         <div class="l-main__content">
@@ -168,8 +176,7 @@
 
             <div class="l-main-hide-contents"></div>
 
-         
-      
+
           <?php get_footer(); ?>
       <?php get_sidebar(); ?>
 
@@ -189,6 +196,5 @@
 </body>
 
 </html>
-/*
-Template Name: HAMBURGER page
-*/
+
+<?php endif; ?>

@@ -19,6 +19,8 @@ add_action('after_setup_theme','custom_theme_support');
 
 
 
+
+
     //タイトル出力
     function Hamburger_title( $title ) {
         if ( is_front_page() && is_home() ) { //トップページなら
@@ -37,9 +39,61 @@ add_action('after_setup_theme','custom_theme_support');
         wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '4.5.0' );
         wp_enqueue_style( 'Hamburger', get_template_directory_uri() . '/css/style.css', array(), '1.0.0' );
         wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/style.css', array(), '1.0.0' );
+        wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.5.0.min.js','','', true );
+        wp_enqueue_script('my_script',get_template_directory_uri().'/js/script.js');
     }
     add_action( 'wp_enqueue_scripts', 'Hamburger_script' );
 
     
 
+    //カスタム投稿タイプの記述
 
+    function cpt_register_works() { //add_actionの２つのパラメーターを定義
+        $labels = [
+            "singular_name" => "Works",
+            "edit_item" => "Works",
+        ];
+        $args = [
+            "label" => "Works", //管理画面に出てくる名前
+            "labels" => $labels,
+            "description" => "",
+            "public" => true,
+            "show_in_rest" => true,
+            "rest_base" => "",
+            "rest_controller_class" => "WP_REST_Posts_Controller",
+            "has_archive" => true,
+            "delete_with_user" => false,
+            "exclude_from_search" => false,
+            "map_meta_cap" => true,
+            "hierarchical" => true,
+            "rewrite" => [ "slug" => "works", "with_front" => true ], //スラッグをworksに設定
+            "query_var" => true,
+            "menu_position" => 5,
+            "supports" => [ "title", "editor", "thumbnail" ],
+        ];
+        register_post_type( "works", $args );
+    }
+    add_action( 'init', 'cpt_register_works' );
+
+    function cpt_register_dep() { //add_actionの２つのパラメーターを定義
+        $labels = [
+            "singular_name" => "dep",
+        ];
+        $args = [
+            "label" => "カテゴリー",
+            "labels" => $labels,
+            "publicly_queryable" => true,
+            "hierarchical" => true,
+            "show_in_menu" => true,
+            "query_var" => true,
+            "rewrite" => [ 'slug' => 'dep', 'with_front' => true, ], //カテゴリーのスラッグ
+            "show_admin_column" => false,
+            "show_in_rest" => true,
+            "rest_base" => "dep",
+            "rest_controller_class" => "WP_REST_Terms_Controller",
+            "show_in_quick_edit" => false,
+            ];
+        register_taxonomy( "dep", [ "works" ], $args ); //「works」というカスタム投稿タイプにカテゴリーを追加
+    }
+    add_action( 'init', 'cpt_register_dep' );
+    ?>
