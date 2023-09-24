@@ -43,7 +43,7 @@ Template Name: HAMBURGER page
 
             </blockquote>
 
-            <div class="p-single__image"><img src="/img/single page second.png" alt="ハンバーガー"></div>
+            <div class="p-single__image"><img src="<?php echo get_template_directory_uri(); ?>/img/single page second.png" alt="ハンバーガー"></div>
 
             <div class="l-single__grid">
 
@@ -74,20 +74,25 @@ Template Name: HAMBURGER page
 
             <div class="l-single__grid__layout">
 
-              <img src="/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
-              <img src="/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
-              <img src="/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
-              <img src="/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
-              <img src="/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
-              <img src="/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
-              <img src="/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
-              <img src="/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
-              <img src="/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/single-hamberger.png" alt="ハンバーガー" class="p-single__smallpic">
             </div>
 
             <div class="l-single__bottom__background">
 
               <div class="l-single__list__inner">
+
+
+
+
+
 
                 <ol class="l-single__list__style">
                   <li>1.リストリストリスト</li>

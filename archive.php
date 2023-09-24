@@ -4,48 +4,70 @@ Template Name: HAMBURGER archiveページ
 */
 ?>
 
-<?php if (  is_archive() ) : ?> <?php endif; ?>
+<?php if( is_archive() ) : ?>  <?php endif; ?>
+
 
 <?php get_header(); ?>  <!-- header.php読み込み -->
 
-<div class="l-main">
+      <div class="l-main">
         <div class="l-main__content">
           <div class="c-top__caption p-archive__caption">
             <div class="c-top__title p-top__title">Menu:</div>
-            <div class="p-title">チーズバーガー</div>
+            <div class="p-title"><?php single_cat_title( ); ?></div>
           </div>
-
 
           <div class="p-contents">
             <div class="p-center__caption">
               <h1 class="p-sub__title">小見出しが入ります</h1>
-              <p class="p-sub__area">テキストが入ります。テキストが入ります。テキストが入ります。
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                テキストが入ります。テキストが入ります。</p>
+              <p class="p-sub__area"><?php echo esc_html( category_description() ); ?></p>
             </div>
 
             <a href="/single.html">
 
 
+             
 
               <section class="p-figcaption__1 p-figcaption">
                 <figure class="p-archive__image">
-                  <img src="/img/archive2x.png" alt="ハンバーガー" class="l-archive__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/archive2x.png" alt="ハンバーガー" class="l-archive__img">
                 </figure>
+　　　　　　　　
 
                 <div class="p-theme ">
-                  <div class="p-figcaption__title-1"><?php echo CFS()->get('title');?></div>
+                  <div class="p-figcaption__title-1"><?php the_title(); ?></div>
                   <div class="p-second__title">小見出しが入ります</div>
-                  <p class="p-theme__service">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                  <p class="p-theme__service"><?php the_content(); ?></p>
                   <button class="p-button" type="button">詳しく見る</button>
                 </div><!--p-theme-->
               </section>
             </a><!--single.html-->
 
-            <a href="/single.html">
+            <a href="<?php the_permalink(); ?>/single.html">
 
+
+           
+
+          <section class="p-figcaption__1 p-figcaption">
+            <figure class="p-archive__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/archive2x.png" alt="ハンバーガー" class="l-archive__img">
+            </figure>
+　　　　　　　　
+
+            <div class="p-theme ">
+              <div class="p-figcaption__title-1"><?php the_title(); ?></div>
+              <div class="p-second__title">小見出しが入ります</div>
+              <p class="p-theme__service"><?php the_content(); ?></p>
+              <button class="p-button" type="button">詳しく見る</button>
+            </div><!--p-theme-->
+          </section>
+        </a><!--single.html-->
+
+        <a href="<?php the_permalink(); ?>/single.html">
+
+
+        
+
+<!-- 
               <section class="p-figcaption__2 p-figcaption">
                 <figure class="p-archive__image">
                   <img src="/img/archive2x.png" alt="ハンバーガー" class="l-archive__img">
@@ -58,11 +80,13 @@ Template Name: HAMBURGER archiveページ
                     テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                   <button class="p-button" type="button">詳しく見る</button>
                 </div><!--p-theme-->
-              </section>
-            </a><!--single.html-->
+              <!-- </section>
+            </a>single.html --> -->
 
-                
-            <a href="/single.html">
+      
+          
+     
+            <!-- <a href="/single.html">
               <section class="p-figcaption__3 p-figcaption">
                 <figure class="p-archive__image">
                   <img src="/img/archive2x.png" alt="ハンバーガー" class="l-archive__img">
@@ -75,12 +99,10 @@ Template Name: HAMBURGER archiveページ
                     テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                   <button class="p-button" type="button">詳しく見る</button>
                 </div><!--p-theme-->
-              </section>
-            </a><!--single.html-->
+              <!-- </section>
+            </a>single.html --> -->
 
-          </div><!--p-contents-->
-
-    
+          </div>p-contents
 
           <div class="p-back__forward">
             <a href="#" onclick="history.back()">
@@ -113,11 +135,7 @@ Template Name: HAMBURGER archiveページ
         </div><!--l-main__content"-->
       </div><!--main-->
 
-    
-
       <div class="l-main-hide-contents"></div>
-
-
 
       <?php get_footer(); ?>
       <?php get_sidebar(); ?>
@@ -140,3 +158,4 @@ Template Name: HAMBURGER archiveページ
 </body>
 
 </html>
+

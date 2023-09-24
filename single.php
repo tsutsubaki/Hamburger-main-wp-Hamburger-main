@@ -5,7 +5,6 @@ Template Name: HAMBURGER single
 
 ?>
 
-<?php if ( is_single() ) : ?>
   
 
 
@@ -17,6 +16,7 @@ Template Name: HAMBURGER single
             <div class="c-top__title p-top__title p-single__static p-single__toptitle ">h1</div>
             <div class="p-title p-single__static ">チーズバーガー</div>
           </div><!--p-single__caption-->
+          
           <div class="p-contents p-single__contents">
             <div class="p-center__caption">
               <h1 class="p-sub__title">見出しh2</h1>
@@ -171,4 +171,3 @@ Template Name: HAMBURGER single
 
 </html>
 
-<?php endif; ?>

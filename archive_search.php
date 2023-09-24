@@ -5,7 +5,7 @@ Template Name: HAMBURGER archive_searchページ
 
 ?>
 
-<?php if (  is_search() ) : ?> <?php endif; ?>
+<?php if (  is_search() ) : ?> 
 
 <?php get_header(); ?>  <!-- header.php読み込み -->
 
