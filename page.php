@@ -181,11 +181,11 @@ Template Name: HAMBURGER page
 
             <div class="l-main-hide-contents"></div>
 
-
+            </div>
           <?php get_footer(); ?>
       <?php get_sidebar(); ?>
 
-      </div><!--l-single__bottom__background-->
+    <!--l-single__bottom__background-->
 
   </article><!--wrapper-->
 

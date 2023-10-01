@@ -1,6 +1,10 @@
 <footer class="l-footer ">
         <a href="/page.html">
-          <p>ショップ情報｜ヒストリー</p>
+
+        <?php wp_nav_menu( array(
+          'theme_location' => 'footer_nav'
+          )); ?>
+
         </a><!--page.html-->
 
         <small class="l-footer_copyright">Copyright: RaiseTeck</small>

@@ -13,7 +13,7 @@
     }
    
     @include g.mq(md){
-        background-image: url(../../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+        background-image: url(../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
        display: flex;
        align-items: center;
      }
@@ -62,6 +62,7 @@
     font-size: 6.666667vw;
     color: rgba(60, 42, 16, 1);
     left: 10.3117505995vw; 
+    margin: 3rem 0 1rem;
 
     @include g.mq(md){
         font-size: 4.5vw;
@@ -139,8 +140,3 @@
         }
 }
 
-figure.p-archive__image {
-    @include g.mq(md){
-    width: calc(100% - 50%);
-}
-}

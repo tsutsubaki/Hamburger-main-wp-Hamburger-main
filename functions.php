@@ -21,6 +21,7 @@ add_action('after_setup_theme','custom_theme_support');
 
 
 
+
     //タイトル出力
     function Hamburger_title( $title ) {
         if ( is_front_page() && is_home() ) { //トップページなら
@@ -97,3 +98,13 @@ add_action('after_setup_theme','custom_theme_support');
     }
     add_action( 'init', 'cpt_register_dep' );
     ?>
+
+<?php
+//投稿→カテゴリのpを外す
+remove_filter('term_description','wpautop');
+//抜粋」に登録されたテキストを表示する際に、<p>タグを除去
+remove_filter('the_excerpt', 'wpautop');
+// 記事の自動整形を無効化
+remove_filter('the_content', 'wpautop');
+remove_filter('the_title', 'wpautop');  
+?>

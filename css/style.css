@@ -319,8 +319,13 @@ img {
 .l-main {
   background-color: rgb(255, 253, 250);
 }
-.l-footer {
+#menu-footermenu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-image: url(../img/footer.png);
+  background-repeat: repeat;
   font-size: 16px;
   font-size: 1rem;
   position: relative;
@@ -328,39 +333,57 @@ img {
   text-align: center;
 }
 @media screen and (min-width: 600px) {
-  .l-footer {
+  #menu-footermenu {
     height: 17.8657074341vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .l-footer {
+  #menu-footermenu {
     height: 25.634146vh;
     width: 100vw;
+    grid-row: 3;
+    grid-column: 1/3;
   }
 }
-.l-footer p {
+#menu-footermenu li a {
   color: rgb(255, 255, 255);
   font-family: "M+ 1m";
   font-weight: 400;
   font-size: 4.8vw;
   line-height: 15.128vw;
-  margin-bottom: 12.666667vw;
 }
 @media screen and (min-width: 600px) {
-  .l-footer p {
+  #menu-footermenu li a {
     font-size: 2.3980815348vw;
     line-height: 11.561151vw;
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1025px) {
-  .l-footer p {
+  #menu-footermenu li a {
     font-size: 1vw;
     line-height: 5.561151vw;
-    padding-top: 3vw;
   }
 }
 
+li.l-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+li.l-footer__shop {
+  margin-right: -11vw;
+}
+li.l-footer__history a {
+  border-left: 1px solid #d3d3d3;
+  height: 22px;
+  padding-left: 15px;
+}
 small.l-footer_copyright {
   display: block;
   font-family: "M+ 1m";
@@ -368,10 +391,15 @@ small.l-footer_copyright {
   font-weight: 300;
   font-size: 3.7333333333vw;
   width: 100%;
+  position: absolute;
+  z-index: 10;
+  margin-top: -20vw;
+  text-align: center;
 }
 @media screen and (min-width: 600px) {
   small.l-footer_copyright {
     font-size: 1.6786570743vw;
+    margin-top: -5vw;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -1158,7 +1186,7 @@ li.c-page__number.c-border:last-child {
 }
 @media screen and (min-width: 600px) {
   .p-archive__caption {
-    background-image: url(../../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+    background-image: url(../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1211,6 +1239,7 @@ li.c-page__number.c-border:last-child {
   font-size: 6.666667vw;
   color: rgb(60, 42, 16);
   left: 10.3117505995vw;
+  margin: 3rem 0 1rem;
 }
 @media screen and (min-width: 600px) {
   .p-sub__title {
@@ -1291,18 +1320,12 @@ li.c-page__number.c-border:last-child {
   }
 }
 
-@media screen and (min-width: 600px) {
-  figure.p-archive__image {
-    width: 50%;
-  }
-}
-
 .p-single__contents {
   color: rgb(60, 42, 16);
 }
 
 .p-single__caption {
-  background-image: url(/wp-content/themes//img/iPhone-single_top.png);
+  background-image: url(../img/IPhone-archive.png);
   height: 60vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1476,5 +1499,5 @@ li.c-page__number.c-border:last-child {
 }
 
 .p-page__caption {
-  background-image: url(../../../img/グループ\ 29.png);
+  background-image: url(../img/グループ\ 29.png);
 }/*# sourceMappingURL=style.css.map */
