@@ -83,7 +83,7 @@ section{
 } }
 
 .p-solution__list{
-background-image: url(../../../img/screen2020-02-10\ 11.47.42.png);
+background-image: url(../img/screen2020-02-10\ 11.47.42.png);
 margin-top: 50px;
 position: relative;
 padding: 6vw 10.6666666667vw 10.6666vw 10.6666666667vw  ;
@@ -96,7 +96,7 @@ padding-top: 6vw;
 }
 
 @include g.mq(lg){
-    background-image: url(../../../img/map.png);
+    background-image: url(../img/map.png);
     
     
     }
