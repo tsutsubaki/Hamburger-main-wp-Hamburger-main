@@ -1,33 +1,33 @@
   <!--サイドメニュー-->
   <aside class="l-sidebar__area">
-      <div class="l-sidebar__background"></div><!--background-color-->
+    <div class="l-sidebar__background"></div><!--background-color-->
 
-<div class="l-sidebar__nav">
-
-
-  <h2 class="l-sidebar__menu">MENU </h2>
-    
-	<?php
-	wp_nav_menu( array(
-		'container'       => 'nav',
-		'container_class' => 'l-sidebar__top-title',
-		'theme_location'  => 'sidebar_nav',
-		
-	) );
-?>
-  
-  </div>
+    <div class="l-sidebar__nav">
 
 
-      <!-- <section class="nav_menu"> -->
+      <h2 class="l-sidebar__menu">MENU </h2>
 
-      
+      <?php
+      wp_nav_menu(array(
+        'container'       => 'nav',
+        'container_class' => 'l-sidebar__top-title',
+        'theme_location'  => 'sidebar_nav',
 
-        <!-- </section> -->
+      ));
+      ?>
 
-      <!--l-side__nav-->
+    </div>
 
-      <!-- <div class="l-sidebar__nav">
+
+    <!-- <section class="nav_menu"> -->
+
+
+
+    <!-- </section> -->
+
+    <!--l-side__nav-->
+
+    <!-- <div class="l-sidebar__nav">
         <h2 class="l-sidebar__menu">Menu</h2>
 
 
@@ -73,15 +73,13 @@
         </ul>
 
       </div>l-side__nav -->
-    
-    
-    
 
-    </aside><!--l-sidebar__area-->
-    <!---サイドメニュー-->
+
+
+
+  </aside><!--l-sidebar__area-->
+  <!---サイドメニュー-->
 
   </article><!--wrapper-->
 
   </div>
-  
-  

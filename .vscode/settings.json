@@ -22,5 +22,8 @@
     "ie >= 11",
     "Android >= 4",
     "ios_saf >= 8"
+  ],
+  "cSpell.words": [
+    "pege"
   ]
 }

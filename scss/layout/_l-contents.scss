@@ -7,15 +7,11 @@
 .c-center__caption {
     @include g.mq(md){
     display: flex; 
-    margin: 0 2vw;  
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, 1fr);
    
     }
 
     @include g.mq(lg){
-    margin: 0 2vw ;
+    
     }
 }
 

@@ -1,6 +1,6 @@
 @use '../../foundation/global' as g;
 
-.c-page{
+.c-page__link{
     margin-right: 2vw;
     font-size: 1.7vw;
     font-family: Roboto;
@@ -8,7 +8,7 @@
 
  }
 
- p.c-page__p {
+ .page-number .pages{
     margin-left: 2vw;
     font-size: 1.7vw;
     font-family: Roboto, sans-serif;
@@ -19,4 +19,3 @@
     margin-right: unset;
  }
 
- 

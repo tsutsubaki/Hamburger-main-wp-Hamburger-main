@@ -1,30 +1,29 @@
 <footer class="l-footer ">
-        <a href="/page.html">
+  <a href="/page.html">
 
-        <?php wp_nav_menu( array(
-          'theme_location' => 'footer_nav'
-          )); ?>
+    <?php wp_nav_menu(array(
+      'theme_location' => 'footer_nav'
+    )); ?>
 
-        </a><!--page.html-->
+  </a><!--page.html-->
 
-        <small class="l-footer_copyright">Copyright: RaiseTeck</small>
+  <small class="l-footer_copyright">Copyright: RaiseTeck</small>
 
-      </footer>
-
-     
-    </main>
+</footer>
 
 
-
-  <!-- javascriptファイル -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-  <script type="text/javascript" src="scss/js/script.js"></script>
+</main>
 
 
-  <?php wp_footer(); ?>
-  
+
+<!-- javascriptファイル -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="scss/js/script.js"></script>
+
+
+<?php wp_footer(); ?>
+
 </body>
 
 </html>
