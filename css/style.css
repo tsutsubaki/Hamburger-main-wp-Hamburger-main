@@ -1358,7 +1358,6 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
 }
 
 .p-single__caption {
-  background-image: url(../img/IPhone-archive.png);
   height: 60vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1388,7 +1387,9 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
 }
 
 .p-single__toptitle {
-  margin-right: 3vw;
+  margin-top: 30vw;
+  margin-left: 3vw;
+  position: absolute;
 }
 
 .p-single__blockquote {
@@ -1435,7 +1436,6 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
   font-size: 2.6666666667vw;
   width: 100%;
   height: 100%;
-  padding: 0 3vw 10vw;
 }
 @media screen and (min-width: 1025px) {
   .p-single__small__blockquote {
@@ -1468,6 +1468,18 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
   .p-single__smallpic__first {
     margin-bottom: 5vw;
   }
+}
+
+.p-list__style {
+  list-style-type: decimal;
+}
+
+.p-list__margin {
+  margin: 2vw 4vw;
+}
+
+.wp-block-group__inner-container {
+  padding: 3vw 8vw;
 }
 
 .l-single__bottom {
@@ -1529,6 +1541,14 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.l-main__content {
+  margin-top: -105px;
+}
+
+.l-list__style {
+  display: none;
 }
 
 .p-page__caption {
