@@ -1,25 +1,20 @@
 @use '../../foundation/global' as g;
 
-.p-top__caption{
-    background-image: url(../img/mainvisual-sp.jpg);
-}
 
 .c-top__caption{
     
     background-position: center;
     height: 75vw;
-    position: relative;
     background-size: auto 100%;
     
 
 @include g.mq(md){
-   height: 27.833333vw;
+   height:  43.833333vw;
    background-repeat: no-repeat;
    background-size: cover;  
     
  }
  @include g.mq(lg){
-    background-image: url(../img/pc-top.jpg); 
     height: 34.12749517063748vw;   
 }
 
@@ -32,12 +27,12 @@
     font-size: 9vw;
     color: #FFFFFF; 
     position: absolute;
-    top: 26.628297vw;
+    top:  58.628297vw;
     left: 10.3117505995vw;
     letter-spacing: 0.2398081535vw;
 
     @include g.mq(md){
-        top: 33%;
+ 
         left: 10.3117505995vw;
         font-size: 4.316546762589928vw;
         
@@ -208,4 +203,9 @@ iframe{
         width: 4vw;
         left: 8vw;                        
     }
+}
+
+
+    .wp-block-image img {
+        margin-top: 104px;
 }

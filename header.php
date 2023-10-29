@@ -8,7 +8,7 @@
   <meta charset="<?php bloginfo('charset'); ?>">
 
   <!-- Webサイトの説明を検索エンジンに伝える -->
-  <meta name="description" content="ハンバーガーサイト">
+  <meta name="description" content="<?php bloginfo('description '); ?>">
 
   <!-- サイトの表示領域を、閲覧するデバイスの幅に合わせる -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,10 +20,12 @@
   <!-- CSS -->
 
 
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+
+  <!--
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/./css/style.css" type="text/css"> -->
+  <link rel="stylesheet" href="?; ?>/./css/style.css" type="text/css"> -->
 
 
   <!-- jQuery -->
@@ -40,6 +42,7 @@ jquery.min.js">
 </head>
 
 <body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
   <article class="c-wrapper ">
 
 

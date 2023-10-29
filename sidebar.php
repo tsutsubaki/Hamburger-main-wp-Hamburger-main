@@ -16,7 +16,9 @@
       ));
       ?>
 
+      <span class="l-sidebar__close "></span>
     </div>
+
 
 
     <!-- <section class="nav_menu"> -->

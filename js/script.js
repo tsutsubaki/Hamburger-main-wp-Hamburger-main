@@ -1,7 +1,6 @@
 
-
-  
-
+// 書き出し部分だけの変更で動く
+jQuery(function($) {
 $("#l-header__menu").click(function () {//ボタンがクリックされたら
   $(".l-sidebar__nav").toggleClass('active');//ボタン自身に activeクラスを付与し
    
@@ -23,4 +22,4 @@ $(".l-sidebar__close").click(function () {//ナビゲーションのリンクが
 
 });
 
-　	
+});

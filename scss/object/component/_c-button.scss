@@ -93,16 +93,19 @@
 
 //*singleボタン://
 
-.c-single__button{
+.wp-block-buttons>.wp-block-button{
     padding: 4vw 22vw;
     font-size: 1.666667vw;
     color: rgba(60, 42, 16, 1);
     margin-bottom: 7vw;
-    border-radius: 10px;
-    border: solid 1px;
-    background-color: rgba(222, 216, 211, 1);
 
     @include g.mq(lg){
-    padding: 3vw 11vw;
+    padding: 3vw 5vw;
 }
+}
+
+.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)
+{
+  background-color: rgba(222, 216, 211, 1);
+  padding: 1vw 9vw;
 }
