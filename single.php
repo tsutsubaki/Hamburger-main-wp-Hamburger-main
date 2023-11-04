@@ -14,25 +14,30 @@ Template Name: HAMBURGER single
       <?php while (have_posts()) :
         the_post(); ?>
 
-        <div class="p-contents p-single__contents">
-          <div class="p-center__caption">
-            <p class="p-sub__area p-sub-single__area">
-            <h1 class="c-top__title p-top__title p-single__static p-single__toptitle">
-              <?php the_title(); ?></h1>
+
+        <div class="p-center__caption">
+          <p class="p-sub__area p-sub-single__area">
+
 
             <?php if (has_post_thumbnail()) : ?>
               <?php the_post_thumbnail(('page_eyecatch')); ?>
-              <?php the_content(); ?>
-            <?php endif; ?>
+          <h1 class="c-top__title p-top__title p-single__static p-single__toptitle">
+            <?php the_title(); ?></h1>
 
-            <?php wp_link_pages(); ?>
-            </p>
-          <?php endwhile; ?>
-        <?php else : ?>
-          <p>表示する記事がありません</p>
-        <?php endif; ?>
+          <div class="p-contents p-single__contents">
+            <?php the_content(); ?>
           </div>
+
+        <?php endif; ?>
+
+        <?php wp_link_pages(); ?>
+        </p>
+      <?php endwhile; ?>
+    <?php else : ?>
+      <p>表示する記事がありません</p>
+    <?php endif; ?>
         </div>
+
   </div>
 </div>
 

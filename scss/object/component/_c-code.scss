@@ -1,6 +1,6 @@
 @use"../../foundation/global" as g;
 
-.c-single__code{
+.wp-block-code{
     background-color: rgba(245, 245, 245, 1);
     color:rgba(60, 42, 16, 1);
     font-family: "M+ 1m, Franklin Gothic Medium, Arial Narrow, Arial, sans-serif";
@@ -21,4 +21,8 @@
 
 .code1{
     padding-left: 5vw;
+}
+
+.wp-block-code{
+  white-space: normal;       
 }

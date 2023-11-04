@@ -15,16 +15,20 @@
 .current{
     margin-left: 2vw;
     border: solid 1px #454545;
-    padding: 0 10px;
+    padding: 4px 8px;
 
 }
 
-a.page{
+a.page {
     border: solid 1px #454545;
-    padding: 0 10px;
+    padding: 4px 8px;
     margin-left: 1vw;
 
 }
 a.nextpostslink {
     margin-left: 2vw
+}
+
+span.extend {
+    padding-left: 1vw;
 }

@@ -21,6 +21,8 @@ Template Name: HAMBURGER archiveページ
         <h1 class="p-sub__title">小見出しが入ります</h1>
         <p class="p-sub__area"><?php echo esc_html(category_description()); ?></p>
 
+
+
         <!-- loop.phpを表示 -->
         <?php get_template_part('loop'); ?>
 
@@ -28,11 +30,7 @@ Template Name: HAMBURGER archiveページ
         <!-- ページナビゲーション -->
         <div class="c-page__link">
 
-          <?php if (function_exists('wp_pagenavi')) {
-            wp_pagenavi(array(
-              'wrapper_class' => 'page-number',
-            ));
-          } ?>
+          <?php wp_pagenavi(); ?>
 
         </div>
 

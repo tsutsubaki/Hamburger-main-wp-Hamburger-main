@@ -4,7 +4,7 @@
     position: fixed;
     height: 100vh;
     overflow: auto;
-
+   
     @include g.mq(lg){
         position: static;
         height: 100%;

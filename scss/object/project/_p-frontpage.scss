@@ -2,10 +2,9 @@
 
 
 .c-top__caption{
-    
-    background-position: center;
-    height: 75vw;
-    background-size: auto 100%;
+height: 55vw;
+background: no-repeat;
+background-size: cover;
     
 
 @include g.mq(md){
@@ -206,6 +205,4 @@ iframe{
 }
 
 
-    .wp-block-image img {
-        margin-top: 104px;
-}
+    

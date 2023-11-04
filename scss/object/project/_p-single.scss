@@ -2,6 +2,8 @@
 
 .p-single__contents{
     color:rgb(60, 42, 16);
+    padding: 0 3vw;
+
 }
 
 .p-single__caption {
@@ -24,13 +26,24 @@
 .p-single__static{
      position: static;
      font-family: "M+ 1m";
-     font-size: 3vw;
+     font-size: 6vw;
+
+     @include g.mq(lg){
+        font-size: 3vw;
+          }
 }
 
 .p-single__toptitle{
-    margin-top: 30vw;
-    margin-left: 3vw;
+    margin: 0 auto;
     position: absolute;
+
+    @include g.mq(md){
+        margin: -10vw auto;
+          }
+
+          @include g.mq(lg){
+            margin: -6vw auto;
+              }
 }
 
 .p-single__blockquote{
@@ -46,11 +59,11 @@
 
     }
 
-.p-sub-single__area{
-    font-size: 2.666666666666667vw;
-
+.p-contents p {
+   
+   
     @include g.mq(lg){
-        font-size: 1.6vw;  
+          
                 
     }
 }
@@ -117,10 +130,8 @@
  }
 }
 
-.p-list__style{
-    list-style-type: decimal;
-   
-    
+.wp-block-group__inner-container li {
+list-style-type: decimal;
 }
 
 

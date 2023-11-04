@@ -38,11 +38,7 @@ Template Name: HAMBURGER archive_searchページ
     <div class="c-page__link">
 
       <!-- ページナビゲーション -->
-      <?php if (function_exists('wp_pagenavi')) {
-        wp_pagenavi(array(
-          'wrapper_class' => 'p-pager',
-        ));
-      } ?>
+      <?php wp_pagenavi(); ?>
 
     </div><!--c-page__link-->
 
