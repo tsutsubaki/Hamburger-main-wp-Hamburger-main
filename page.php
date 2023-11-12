@@ -20,23 +20,27 @@ Template Name: HAMBURGER page
     </div><!--p-single__caption-->
   <?php endif; ?>
 
-  <?php the_content(); ?>
+  <div class="p-contents">
 
-  <div class="p-contents p-single__contents">
-    <div class="p-center__caption">
+
+
+    <?php the_content(); ?>
+
+    <div class="p-contents p-single__contents">
+      <div class="p-center__caption">
+
+      </div>
+
+      <div class="l-single__bottom__background">
+
+        <div class="l-single__list__inner">
+
+
+        </div><!--l-single__list__inner-->
+
+      </div><!--p-contents-->
 
     </div>
-
-    <div class="l-single__bottom__background">
-
-      <div class="l-single__list__inner">
-
-
-      </div><!--l-single__list__inner-->
-
-    </div><!--p-contents-->
-
-
     <div class="l-main-hide-contents"></div>
 
   </div>

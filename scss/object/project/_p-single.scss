@@ -151,9 +151,11 @@ list-style-type: decimal;
     margin: 2vw 4vw;
     & li {
         margin-bottom: 2vw;
+        font-size: medium;
 
         &:nth-child(2){
             margin-left: 5vw;
+            font-size: medium;
         }
     }
 

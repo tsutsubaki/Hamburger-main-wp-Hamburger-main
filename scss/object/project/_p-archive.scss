@@ -28,9 +28,6 @@
       }
 }
 
-img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image{
-  width: 900px;
-}
 
 .p-top__title{
     font-family: "Roboto";
@@ -85,8 +82,8 @@ h2.wp-block-heading{
 }
 
 .p-sub__area {
- 
-
+  margin-bottom: 5vw;
+  
     @include g.mq(md){
         font-size: 1.8vw;
       }
@@ -150,3 +147,6 @@ h2.wp-block-heading{
         }
 }
 
+.p-contents {
+  margin: 0 4vw;
+}

@@ -66,6 +66,8 @@ body.fixed {
 img {
   display: block;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-figcaption {
@@ -326,17 +328,18 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   bottom: 0; /*下に固定*/
 }
 @media screen and (min-width: 600px) {
   .l-footer {
-    height: 17.8657074341vw;
+    height: 23.865707vw;
     position: unset;
   }
 }
 @media screen and (min-width: 1025px) {
   .l-footer {
-    height: 22.634146vh;
+    height: 11.634146vw;
     width: 100vw;
     grid-row: 3;
     grid-column: 1/3;
@@ -420,7 +423,6 @@ small.l-footer_copyright {
   z-index: 10;
   margin-top: 15vw;
   text-align: center;
-  margin-right: 12vw;
 }
 @media screen and (min-width: 600px) {
   small.l-footer_copyright {
@@ -432,7 +434,7 @@ small.l-footer_copyright {
 @media screen and (min-width: 1025px) {
   small.l-footer_copyright {
     font-size: 0.678657vw;
-    margin-top: 7vw;
+    margin-top: 9vw;
     margin-right: 2vw;
   }
 }
@@ -445,6 +447,40 @@ small.l-footer_copyright {
 .p-archive__footer .__p {
   font-size: 1.5vw;
   padding: 2vw 0 1vw;
+}
+
+#menu-item-404 {
+  margin-right: -20px;
+}
+@media screen and (min-width: 1025px) {
+  #menu-item-404 {
+    margin-right: -81px;
+  }
+}
+
+.border {
+  border-right: solid white 1px;
+  height: 4vw;
+  position: absolute;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 4vw;
+  margin-top: 40px;
+}
+@media screen and (min-width: 600px) {
+  .border {
+    margin-right: 2vw;
+    margin-top: 52px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .border {
+    margin-right: 2vw;
+    margin-top: 33px;
+    height: 3vw;
+  }
 }
 
 .menu-item {
@@ -808,7 +844,7 @@ td:last-of-type {
   font-size: 9vw;
   color: #FFFFFF;
   position: absolute;
-  top: 58.628297vw;
+  top: 54.628297vw;
   left: 10.3117505995vw;
   letter-spacing: 0.2398081535vw;
 }
@@ -816,12 +852,14 @@ td:last-of-type {
   .c-top__title {
     left: 10.3117505995vw;
     font-size: 4.3165467626vw;
+    top: 48vw;
   }
 }
 @media screen and (min-width: 1025px) {
   .c-top__title {
     font-size: 2.5rem;
     left: 4.311751vw;
+    top: 23vw;
   }
 }
 
@@ -1241,10 +1279,6 @@ li.c-page__number.c-border:last-child {
   }
 }
 
-img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
-  width: 900px;
-}
-
 .p-top__title {
   font-family: "Roboto";
 }
@@ -1300,6 +1334,9 @@ h2.wp-block-heading {
   }
 }
 
+.p-sub__area {
+  margin-bottom: 5vw;
+}
 @media screen and (min-width: 600px) {
   .p-sub__area {
     font-size: 1.8vw;
@@ -1363,6 +1400,10 @@ h2.wp-block-heading {
     font-size: 0.8vw;
     line-height: 1.1rem;
   }
+}
+
+.p-contents {
+  margin: 0 4vw;
 }
 
 .p-single__contents {
@@ -1508,9 +1549,11 @@ h2.wp-block-heading {
 }
 .second-list__style li {
   margin-bottom: 2vw;
+  font-size: medium;
 }
 .second-list__style li:nth-child(2) {
   margin-left: 5vw;
+  font-size: medium;
 }
 
 .wp-block-heading {

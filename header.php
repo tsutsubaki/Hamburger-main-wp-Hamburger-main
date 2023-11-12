@@ -32,10 +32,11 @@
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/　
 jquery.min.js">
 </script>
+  -->
 
   <script src="https://kit.fontawesome.com/b0d0736d54.js" crossorigin="anonymous"></script>
 
-  -->
+
 
   <?php wp_head(); ?>
 
@@ -53,7 +54,7 @@ jquery.min.js">
         <div id="l-header__content">
           <div id="l-header__menu" class="button">Menu</div>
           <div id="l-header__logo"><a href="<?php echo esc_url(home_url('/')); ?>"> <?php bloginfo('name'); ?> </a></div>
-          <p class="header__description"><?php bloginfo('description'); ?></p>
+          <p class="header__description"></p>
         </div><!--l-header__content-->
 
 
