@@ -145,3 +145,13 @@ function add_theme_js()
     );
 }
 add_action('wp_enqueue_scripts', 'add_theme_js');
+
+/* 存在しないページを指定された場合は 404 ページを表示する */
+function redirect_404()
+{
+    //メインページ・シングルページ・アーカイブ（月別）・固定ページ 以外の指定の場合 404 ページを表示する
+    if (is_home() || is_single() || is_month() || is_page()) return;
+    include(TEMPLATEPATH . '/404.php');
+    exit;
+}
+add_action('template_redirect', 'redirect_404');
