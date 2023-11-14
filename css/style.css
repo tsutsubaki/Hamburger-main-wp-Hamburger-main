@@ -478,9 +478,9 @@ small.l-footer_copyright {
 }
 @media screen and (min-width: 1025px) {
   .border {
-    margin-right: 1.5vw;
-    margin-top: 52px;
-    height: 1.3vw;
+    margin-right: 2vw;
+    margin-top: 50px;
+    height: 1vw;
   }
 }
 
