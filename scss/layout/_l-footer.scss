@@ -153,14 +153,14 @@ small.l-footer_copyright{
 }
 
 #menu-item-404{
-  margin-right: -20px;   
+  margin-right: -94px;   
 
    @include g.mq(md){
    
    }
 
    @include g.mq(lg){
-      margin-right: -81px;
+      margin-right: -150px;
    }
 }
 
@@ -174,12 +174,13 @@ small.l-footer_copyright{
 
    @include g.mq(md){
       margin-right: 2vw;
-      margin-top: 52px;
+      margin-top: 7vw;
+      height: 2.5vw;
          }
          @include g.mq(lg){
-            margin-right: 2vw;
-            margin-top: 33px;
-            height: 3vw;
+            margin-right: 3vw;
+            margin-top: 45px;
+            height: 1.3vw;
       
          }
       

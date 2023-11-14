@@ -450,11 +450,11 @@ small.l-footer_copyright {
 }
 
 #menu-item-404 {
-  margin-right: -20px;
+  margin-right: -94px;
 }
 @media screen and (min-width: 1025px) {
   #menu-item-404 {
-    margin-right: -81px;
+    margin-right: -150px;
   }
 }
 
@@ -472,14 +472,15 @@ small.l-footer_copyright {
 @media screen and (min-width: 600px) {
   .border {
     margin-right: 2vw;
-    margin-top: 52px;
+    margin-top: 7vw;
+    height: 2.5vw;
   }
 }
 @media screen and (min-width: 1025px) {
   .border {
-    margin-right: 2vw;
-    margin-top: 33px;
-    height: 3vw;
+    margin-right: 3vw;
+    margin-top: 45px;
+    height: 1.3vw;
   }
 }
 
