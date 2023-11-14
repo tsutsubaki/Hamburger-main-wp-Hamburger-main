@@ -170,16 +170,16 @@ small.l-footer_copyright{
    position: absolute;
    align-items: center;
    margin-right: 4vw;
-   margin-top: 40px;
+   margin-top: 44px;
 
    @include g.mq(md){
       margin-right: 2vw;
-      margin-top: 7vw;
+      margin-top: 6.5vw;
       height: 2.5vw;
          }
          @include g.mq(lg){
-            margin-right: 3vw;
-            margin-top: 45px;
+            margin-right: 1.5vw;
+            margin-top: 52px;
             height: 1.3vw;
       
          }
