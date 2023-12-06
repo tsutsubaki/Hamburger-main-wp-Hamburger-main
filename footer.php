@@ -1,19 +1,17 @@
 <footer class="l-footer ">
-  <a href="/page.html">
+
 
     <?php if (has_nav_menu('footer_nav')) : ?>
 
       <?php wp_nav_menu(array(
         'theme_location' => 'footer_nav',
         'container'     => '',
-        'menu_class'    => '',
-        'items_wrap' => '%3$s', //<ul>を出力しない
-        'link_before' => '<span class="l-footer__item">',
-        'link_after' => '</span>'
+        'menu_class'    => 'p-footer__list',
+         // 'items_wrap' => '%3$s', //<ul>を出力しない
+        // 'link_before' => '<span class="l-footer__item">',
+        // 'link_after' => '</span>'
+        
       )); ?>
-
-  </a><!--page.html-->
-  <div class="border"></div>
 
   <small class="l-footer_copyright">Copyright: RaiseTeck</small>
 
