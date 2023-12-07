@@ -725,6 +725,7 @@ ul.sub-menu {
   position: fixed;
   height: 100vh;
   overflow: auto;
+  width: 100%;
 }
 @media screen and (min-width: 1025px) {
   .c-main {
