@@ -1,39 +1,40 @@
 @use "../../foundation/global" as g;
 
-.c-wrapper{
+.c-wrapper {
     min-height: 100vh;
-    position: relative;/*←相対位置*/
-    padding-bottom: 120px;/*←footerの高さ*/
+    position: relative;
+    /*←相対位置*/
     box-sizing: border-box;
-    
-    @include g.mq(md){
-       display: flex;
-       overflow:hidden;
+
+    @include g.mq(md) {
+        display: flex;
+        overflow: hidden;
     }
 }
 
-.c-label{
+.c-label {
     font-family: "Roboto";
     font-style: Bold;
     @include g.font-size(38);
     color: rgba(255, 255, 255, 1);
     margin-bottom: 2.8vw;
 
-        @include g.mq(md){
+    @include g.mq(md) {
         font-size: 4.333333vw;
-        }
-            @include g.mq(lg){
-                font-size: 3.804878vw;
-                margin-bottom: 1vw;    
-            
-            }
+    }
+
+    @include g.mq(lg) {
+        font-size: 3.804878vw;
+        margin-bottom: 1vw;
+
+    }
 }
 
 .c-label a {
     color: rgb(255, 255, 255);
 }
- 
-.c-figcaption__title-1{
+
+.c-figcaption__title-1 {
     color: rgba(60, 42, 16, 1);
     font-family: "mplus-1m-bold";
     font-weight: 700;
@@ -41,31 +42,27 @@
     margin-bottom: 7px;
     margin-top: -11px;
 
-    @include g.mq(md){   
+    @include g.mq(md) {
 
-    margin-bottom: 1.9184652278vw;
-    font-size: 2.8776978417vw;
-    line-height: 2.8776978417vw;
+        margin-bottom: 1.9184652278vw;
+        font-size: 2.8776978417vw;
+        line-height: 2.8776978417vw;
     }
-    @include g.mq(lg){
+
+    @include g.mq(lg) {
         font-size: 1.5vw;
         margin: -2.7vw 0 0.5vw -1.6vw;
-    
+
     }
 
 }
-    
 
 
-.c-center__caption{
-   
 
-@include g.mq(md){
-       
-    }
+.c-center__caption {
 
-    @include g.mq(lg){
-      
-    
-}
+
+    @include g.mq(md) {}
+
+    @include g.mq(lg) {}
 }

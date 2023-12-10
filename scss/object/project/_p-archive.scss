@@ -1,152 +1,161 @@
 @use '../../foundation/global' as g;
 
-.p-archive__caption{
-    background-image: url(../img/IPhone-archive_top.png);
+.p-archive__caption {
+  background-image: url(../img/IPhone-archive_top.png);
 
-    &::before{
-        content: "";
-  position: absolute;
-  top: 215px;  bottom: 0;
-  left: 0;  right: 0;
-  background: black;
-  opacity:0.4;
-  height: 55vw;
-    
-   
-    @include g.mq(md){
-       display: flex;
-       align-items: center;
-       height: 44vw;
-    
-          }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 215px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.4;
+    height: 55vw;
 
-     @include g.mq(lg){
+
+    @include g.mq(md) {
+      display: flex;
+      align-items: center;
+      height: 44vw;
+
+    }
+
+    @include g.mq(lg) {
       height: 34vw;
       position: unset;
-         
-        }
-      }
-}
 
-
-.p-top__title{
-    font-family: "Roboto";
-
-    @include g.mq(md){
-        font-size: 5.853658536585367vw; 
-        position: absolute;
-        top:45.4vw;
-     }
-     @include g.mq(lg){
-      top:25.4vw;
-         
-        }
-}
-
-
-.p-title{
-    position: absolute;
-    top: 62.628297vw;
-    left: 48.311751vw;
-    color: #FFFFFF;
-
-    @include g.mq(md){
-        position: absolute;
-        top: 49vw;
-        left: 36.311751vw;
-        font-size: 2.666666666666667vw;
-      }
-      @include g.mq(lg){
-        top: 28vw;
-        left: 31.311751vw;
-        font-size: 2.560976vw;
-      
     }
-        }
+  }
+}
 
 
-h2.wp-block-heading{
-    font-size: 6.666667vw;
-    color: rgba(60, 42, 16, 1);
-    left: 10.3117505995vw; 
-    margin: 1rem 0 1rem;
+.p-top__title {
+  font-family: "Roboto";
 
-    @include g.mq(md){
-        font-size: 4.5vw;
-      }
-      @include g.mq(lg){
-        font-size: 3.51219512195122vw;
-          
-         }
+  @include g.mq(md) {
+    font-size: 5.853658536585367vw;
+    position: absolute;
+    top: 45.4vw;
+  }
+
+  @include g.mq(lg) {
+    top: 25.4vw;
+
+  }
+}
+
+
+.p-title {
+  position: absolute;
+  top: 62.628297vw;
+  left: 48.311751vw;
+  color: #FFFFFF;
+
+  @include g.mq(md) {
+    position: absolute;
+    top: 49vw;
+    left: 36.311751vw;
+    font-size: 2.666666666666667vw;
+  }
+
+  @include g.mq(lg) {
+    top: 28vw;
+    left: 31.311751vw;
+    font-size: 2.560976vw;
+
+  }
+}
+
+
+h2.wp-block-heading {
+  font-size: 6.666667vw;
+  color: rgba(60, 42, 16, 1);
+  left: 10.3117505995vw;
+  margin: 1rem 0 1rem;
+
+  @include g.mq(md) {
+    font-size: 4.5vw;
+  }
+
+  @include g.mq(lg) {
+    font-size: 3.51219512195122vw;
+
+  }
 
 }
 
 .p-sub__area {
   margin-bottom: 5vw;
-  
-    @include g.mq(md){
-        font-size: 1.8vw;
-      }
-      @include g.mq(lg){
-        font-size: 1.5609756097560976vw;
-          
-         }
+
+  @include g.mq(md) {
+    font-size: 1.8vw;
+  }
+
+  @include g.mq(lg) {
+    font-size: 1.5609756097560976vw;
+
+  }
 }
 
 .p-second__title {
-    font-weight: 700;
-    padding: 2vw 0 1vw 0;
-    
-    @include g.mq(md){
-      font-weight: 400;  
-      padding: 1vw 0 1vw 0;
-      }
+  font-weight: 700;
+  padding: 2vw 0 1vw 0;
 
-      @include g.mq(lg){
-        font-weight: 500;
-        font-size: 1.441463vw;
-          
-         }
+  @include g.mq(md) {
+    font-weight: 400;
+    padding: 1vw 0 1vw 0;
+  }
+
+  @include g.mq(lg) {
+    font-weight: 500;
+    font-size: 1.441463vw;
+
+  }
 
 }
 
 
 
-.p-theme{
+.p-theme {
   background-color: rgba(60, 43, 28, 1);
   width: 100%;
   height: auto;
   color: #FFFFFF;
   padding: 5vw;
 
-    @include g.mq(md){
-        padding: 2vw;
-        min-height: 26.1875rem;
-        width: calc(100% - 50%);
-        }
-        @include g.mq(lg){
-            min-height: 0rem;         
+  @include g.mq(md) {
+    padding: 2vw;
+    min-height: 26.1875rem;
+    width: calc(100% - 50%);
+  }
 
-        }
+  @include g.mq(lg) {
+    min-height: 0rem;
 
-     &__service {
-         font-size: 2.666666666666667vw;
-    
-        
+  }
 
-        @include g.mq(md){
-            font-size: 1.8vw;
-            font-weight: 300;
-            line-height: 1.8rem;
-            padding-bottom: 3vw;
-         }
-         @include g.mq(lg){
-            font-size: 0.8vw;
-            line-height: 1.1rem;
-         }
-        }
+  &__service {
+    font-size: 2.666666666666667vw;
+
+
+
+    @include g.mq(md) {
+      font-size: 1.8vw;
+      font-weight: 300;
+      line-height: 1.8rem;
+      padding-bottom: 3vw;
+    }
+
+    @include g.mq(lg) {
+      font-size: 0.8vw;
+      line-height: 1.1rem;
+    }
+  }
 }
 
 .p-contents {
   margin: 0 4vw;
+  min-height: 100vh;
 }

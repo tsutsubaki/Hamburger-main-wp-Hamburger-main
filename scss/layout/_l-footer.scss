@@ -1,30 +1,29 @@
 @use"../foundation/global" as g;
 
 .l-footer {
-   display: flex;
+   display: inline-block;
    background-image: url(../img/footer.png);
    background-repeat: repeat;
    @include g.font-size(16);
-   height: 30vw;
    justify-content: center;
    text-align: center;
-
+   width: 100%;
    bottom: 0;
    /*下に固定*/
+   position: absolute;
+   /*←絶対位置*/
 
    @include g.mq(md) {
-      height: 23.865707vw;
-      position: unset;
 
+      min-height: 20vh;
    }
 
    @include g.mq(lg) {
-      height: 11.634146vw;
+
       width: 100vw;
       grid-row: 3;
       grid-column: 1/3;
-      position: absolute;
-      /*←絶対位置*/
+      min-height: 20vh;
    }
 
    & menu {
@@ -40,17 +39,16 @@
       font-family: 'M+ 1m';
       font-weight: 400;
       font-size: 3.8vw;
-      line-height: 12.128vw;
+
 
       @include g.mq(md) {
          font-size: 2.3980815347721824vw;
-         line-height: 11.561151vw;
+
 
       }
 
       @include g.mq(lg) {
          font-size: 1.0vw;
-         line-height: 5.561151vw;
 
       }
 
@@ -92,8 +90,13 @@ li.l-footer {
    }
 }
 
-ul#menu-footermenu {
+ul#menu-footer-menu {
    display: flex;
+   padding-top: 3vw;
+
+   @include g.mq(md) {
+      padding-top: 0vw;
+   }
 
 }
 
@@ -104,22 +107,18 @@ small.l-footer_copyright {
    font-weight: 300;
    font-size: 2.733333333333334vw;
    width: 100%;
-   position: absolute;
-   z-index: 10;
-   margin-top: 15vw;
+   margin-top: 5vw;
    text-align: center;
 
 
    @include g.mq(md) {
       font-size: 1.6786570743405276vw;
-      margin-top: 13vw;
-      margin-right: 5vw;
+      margin-top: 3vw;
    }
 
    @include g.mq(lg) {
       font-size: 0.678657vw;
-      margin-top: 9vw;
-      margin-right: 2vw;
+      margin-top: 2vw;
 
    }
 }
@@ -127,7 +126,6 @@ small.l-footer_copyright {
 
 /*archive-footer*/
 .p-archive__footer {
-   height: auto;
    padding-bottom: 2vw;
 
    .__p {
@@ -136,20 +134,33 @@ small.l-footer_copyright {
    }
 }
 
-ul#menu-footer-menu {
-   display: flex;
-}
-
-.p-footer__list li:first-child {
-   padding-right: 18px;
-}
-
-.p-footer__list li:last-child {
-   padding-left: 18px;
-
-}
 
 .l-footer a :first-child {
    border-right: 1px solid;
    border-color: #fff;
+}
+
+.p-footer__list {
+   display: flex;
+   justify-content: center;
+
+   @include g.mq(md) {
+
+      margin-top: 4vw;
+   }
+
+   @include g.mq(lg) {
+      margin-top: 2vw;
+
+   }
+}
+
+.p-footer__list li:nth-child(odd) {
+   border-right: solid #ffff 1px;
+   padding-right: 2vw;
+}
+
+.p-footer__list li:nth-child(even) {
+   margin-left: 2vw;
+   margin-right: 2vw;
 }
