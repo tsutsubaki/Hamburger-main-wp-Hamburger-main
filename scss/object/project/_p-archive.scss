@@ -23,7 +23,7 @@
     }
 
     @include g.mq(lg) {
-      height: 34vw;
+      height: 44vw;
       position: unset;
 
     }
@@ -49,7 +49,7 @@
 
 .p-title {
   position: absolute;
-  top: 62.628297vw;
+  top: 59.628297vw;
   left: 48.311751vw;
   color: #FFFFFF;
 
@@ -116,8 +116,6 @@ h2.wp-block-heading {
 
 }
 
-
-
 .p-theme {
   background-color: rgba(60, 43, 28, 1);
   width: 100%;
@@ -156,6 +154,9 @@ h2.wp-block-heading {
 }
 
 .p-contents {
-  margin: 0 4vw;
-  min-height: 100vh;
+  margin: 0 4vw 1vw;
+}
+
+.p-contents.p-single__contents a {
+  color: rgb(60, 42, 16);
 }

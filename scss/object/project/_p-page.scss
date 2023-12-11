@@ -2,17 +2,11 @@
 
 
 
-.pages::before{
-    content:"page"
+.pages::before {
+    content: "page"
 }
 
-.pages::after{
-    content:"<<"
-
-    
-}
-
-.current{
+.current {
     margin-left: 2vw;
     border: solid 1px #454545;
     padding: 4px 8px;
@@ -25,6 +19,7 @@ a.page {
     margin-left: 1vw;
 
 }
+
 a.nextpostslink {
     margin-left: 2vw
 }

@@ -4,54 +4,41 @@
 // padding: 0 4.266667vw;
 // }
 
-img{
-    display: block;
-    height: 100%;
-    object-fit: cover;
+img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .p-figcaption {
-    margin-bottom: 4vw;
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 4vw;
+  display: flex;
+  flex-direction: column;
 
-    @include g.mq(md){
-       flex-direction: row;
-      }
-      
-      @include g.mq(lg){
-        
-          
-         }
+  @include g.mq(md) {
+    flex-direction: row;
+  }
 
-    &__title-1{
+  &__title-1 {
     font-size: 3.3333333333333335vw;
     margin-top: -1.5vw;
 
-    @include g.mq(md){
-        font-size: 2.2vw;
-         margin-top: 1.5vw;
-         margin-bottom: 1.3vw;
-       }
-       
-       @include g.mq(lg){
-         
-           
-          }
+    @include g.mq(md) {
+      font-size: 2.2vw;
+      margin-top: 1.5vw;
+      margin-bottom: 1.3vw;
     }
+
+  }
 }
 
-.p-second__title{
-    font-size: 2.666666666666667vw;
-  
-      @include g.mq(md){
-         font-size: 2.2vw;
-       }
-       
-       @include g.mq(lg){
-         
-           
-          }
+.p-second__title {
+  font-size: 2.666666666666667vw;
+
+  @include g.mq(md) {
+    font-size: 2.2vw;
+  }
+
 
 }
 
@@ -60,12 +47,10 @@ img{
   object-fit: cover;
   object-position: 40% center;
 
-  @include g.mq(md){
-  
-  }
-  
-  @include g.mq(lg){
-   
-      
-     }
+  @include g.mq(md) {}
+
+}
+
+.wp-container-core-columns-layout-4.wp-container-core-columns-layout-4 {
+  margin-bottom: 8vw;
 }

@@ -26,7 +26,12 @@ Template Name: HAMBURGER archiveページ
         <!-- loop.phpを表示 -->
         <?php get_template_part('loop'); ?>
 
-
+        <div class="p-back__forward">
+      <a href="#" onclick="history.back()">
+        <<前へ</a>
+          <a href="#" onclick="history.forward()">次へ>></a>
+    </div>
+    
         <!-- ページナビゲーション -->
         <div class="c-page__link">
 
@@ -41,11 +46,7 @@ Template Name: HAMBURGER archiveページ
 
     </div>
 
-    <!-- <div class="p-back__forward">
-      <a href="#" onclick="history.back()">
-        <<前へ< /a>
-          <a href="#" onclick="history.forward()">次へ>></a>
-    </div>-p-back__forward-->
+   
 
     <!--active-page-->
     <!-- <div class="c-page__link">

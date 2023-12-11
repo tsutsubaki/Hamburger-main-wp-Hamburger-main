@@ -1,7 +1,7 @@
 @use"../../foundation/global" as g;
 
-.p-single__contents{
-    color:rgb(60, 42, 16);
+.p-single__contents {
+    color: rgb(60, 42, 16);
     padding: 0 3vw;
 
 }
@@ -13,66 +13,63 @@
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;   
-    
-    @include g.mq(lg){
-        height: 40vw;             
-    }   
+    justify-content: center;
+
+    @include g.mq(lg) {
+        height: 40vw;
+    }
 
 
 
 }
 
-.p-single__static{
-     position: static;
-     font-family: "M+ 1m";
-     font-size: 6vw;
+.p-single__static {
+    position: static;
+    font-family: "M+ 1m";
+    font-size: 6vw;
 
-     @include g.mq(lg){
+    @include g.mq(lg) {
         font-size: 3vw;
-          }
+    }
 }
 
-.p-single__toptitle{
+.p-single__toptitle {
     margin: 0 auto;
     position: absolute;
 
-    @include g.mq(md){
+    @include g.mq(md) {
         margin: -10vw auto;
-          }
+    }
 
-          @include g.mq(lg){
-            margin: -6vw auto;
-              }
+    @include g.mq(lg) {
+        margin: -6vw auto;
+    }
 }
 
-.p-single__blockquote{
+.p-single__blockquote {
     background-color: rgb(112 112 112 /9%);
     padding: 8vw 7vw;
     line-height: 3.9600000000000004vw;
     font-size: 2.666666666666667vw;
     color: rgba(60, 42, 16, 1);
 
-    @include g.mq(lg){
-        font-size: 1.6vw;                  
-    }   
-
+    @include g.mq(lg) {
+        font-size: 1.6vw;
     }
 
-.p-contents p {
-   
-   
-    @include g.mq(lg){
-          
-                
-    }
 }
 
-.p-single__tag{
+.p-contents p {
+
+
+    @include g.mq(lg) {}
+}
+
+.p-single__tag {
     display: flex;
     margin-top: 10vw;
-    
-    p{
+
+    p {
         display: block;
         margin-left: 2vw;
         color: rgba(74, 108, 155, 1);
@@ -80,84 +77,83 @@
     }
 }
 
-.p-single__image{
-  margin: 7vw 0;
+.p-single__image {
+    margin: 7vw 0;
 }
 
-.p-single__small__blockquote{
+.p-single__small__blockquote {
     font-size: 2.666666666666667vw;
     width: 100%;
     height: 100%;
-   
-    @include g.mq(lg){
-        font-size: 1.6vw;  
-                
+
+    @include g.mq(lg) {
+        font-size: 1.6vw;
+
     }
 
-    &__inner{
+    &__inner {
         padding-bottom: 5vw;
     }
- }
+}
 
- .wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) a, .wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) img{
+.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) a,
+.wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) img {
     margin-top: 5vw;
 
-    @include g.mq(md){
-      margin-top: 1vw;
-        }
-      
-        @include g.mq(lg){
-          
-                
-          }
-    
-    
- 
- &__first{
-   width: 70.833333vw ;
-   height: auto;
-   margin: 0 auto ;
-
-   @include g.mq(md){
-    margin-bottom: 30vw;
+    @include g.mq(md) {
+        margin-top: 1vw;
     }
-  
-    @include g.mq(lg){
-        margin-bottom: 5vw;
-            
-      }
 
- }
+    @include g.mq(lg) {}
+
+
+
+    &__first {
+        width: 70.833333vw;
+        height: auto;
+        margin: 0 auto;
+
+        @include g.mq(md) {
+            margin-bottom: 30vw;
+        }
+
+        @include g.mq(lg) {
+            margin-bottom: 5vw;
+
+        }
+
+    }
 }
 
 .wp-block-group__inner-container li {
-list-style-type: decimal;
+    list-style-type: decimal;
 }
 
 
-.wp-block-group__inner-container ol{
+.wp-block-group__inner-container ol {
     margin: 4vw 8vw;
 
-    &:nth-child(2){
+    &:nth-child(2) {
         margin-left: 12vw;
     }
 }
 
-.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:last-child{
+.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image):first-child:last-child {
     position: unset;
 }
 
-.second-list__style{
+.second-list__style {
     margin: 2vw 4vw;
+
     & li {
         margin-bottom: 2vw;
         font-size: medium;
 
-        &:nth-child(2){
+        &:nth-child(2) {
             margin-left: 5vw;
             font-size: medium;
         }
     }
 
-    
+
 }

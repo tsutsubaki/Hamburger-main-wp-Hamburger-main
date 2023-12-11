@@ -1,99 +1,90 @@
 @use '../foundation/global' as g;
 
-.button{
+.button {
     cursor: pointer;
 }
 
 .c-center__caption {
-    @include g.mq(md){
-    display: flex; 
-   
+    @include g.mq(md) {
+        display: flex;
+
     }
 
-    @include g.mq(lg){
-    
-    }
 }
 
-.figcaption{
+.figcaption {
     position: relative;
     margin: 5vw;
     padding: 4vw;
     background-size: cover;
     height: auto;
-    
-            @include g.mq(md){
-                padding: 2vw;    
-                margin: 5vw 2vw;
-                min-height: 643px;
-                height: 100%;
-                display: grid;
-                align-items: end;
-                }
 
-            @include g.mq(lg){
-                margin-top: 4rem;  
-            /* display: flex;    */
-                flex-flow: column;
-                justify-content: flex-end;
-            }
+    @include g.mq(md) {
+        padding: 2vw;
+        margin: 5vw 2vw;
+        min-height: 643px;
+        height: 100%;
+        display: grid;
+        align-items: end;
+    }
+
+    @include g.mq(lg) {
+        margin-top: 4rem;
+        /* display: flex;    */
+        flex-flow: column;
+        justify-content: flex-end;
+    }
 }
 
 
-.l-theme{         
-        
+.l-theme {
+
     font-family: g.$main-font;
     @include g.main-area;
 
-    @include g.mq(md){
-    
-        
-               }
-   
- 
+    &__theme {
 
-&__theme{
-    
-    @include g.main-area;
+        @include g.main-area;
 
-    @include g.mq(md){
-        margin-top: 2.266667vw;
+        @include g.mq(md) {
+            margin-top: 2.266667vw;
 
-}
-}
-        
-&__service{
-list-style: none;
-font-family: 'M+ 1m';
-color: g.$color-c-figcaption__title;
-font-size: 16px;
+        }
+    }
 
-@include g.mq(md){ 
-font-size: 0.9rem;
-margin-top: auto;
-}
-@include g.mq(lg){
-   margin: 0 -1vw;
-   font-size: 0.9vw;
-   line-height: 1.3vw;
-      
-}
-}
+    &__service {
+        list-style: none;
+        font-family: 'M+ 1m';
+        color: g.$color-c-figcaption__title;
+        font-size: 16px;
+
+        @include g.mq(md) {
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        @include g.mq(lg) {
+            margin: 0 -1vw;
+            font-size: 0.9vw;
+            line-height: 1.3vw;
+
+        }
+    }
 
 }
 
 .l-item {
-    @include g.mq(md){   
-     padding: 2.666666666666667vw ;
-     
-}
+    @include g.mq(md) {
+        padding: 2.666666666666667vw;
+
+    }
 }
 
-.l-contens__title{
+.l-contens__title {
     margin-bottom: auto;
 }
 
-.attachment-page_eyecatch{
+.attachment-page_eyecatch {
     height: 301px;
     object-fit: cover;
 }
