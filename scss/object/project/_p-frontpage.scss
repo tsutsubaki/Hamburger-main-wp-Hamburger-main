@@ -83,10 +83,6 @@ section {
     padding-top: 6vw;
 
 
-    @include g.mq(md) {
-        padding: 6vw 4.666667vw;
-    }
-
     @include g.mq(lg) {
         margin-bottom: 6vw;
         margin-top: 0;
