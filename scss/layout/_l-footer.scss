@@ -9,6 +9,7 @@
    width: 100%;
    bottom: 0;
    /*下に固定*/
+   position: relative;
 
    @include g.mq(lg) {
 
@@ -62,11 +63,14 @@ li.l-footer {
 
 ul#menu-footer-menu {
    display: flex;
-   padding-top: 2.5vw;
+   padding-top: 5vw;
+   padding-bottom: 3vw;
 
-   @include g.mq(lg) {
-      padding-top: 1.3vw
+   @include g.mq(md) {
+      padding-bottom: 1vw;
+      padding-top: 4vw;
    }
+
 
 }
 
@@ -77,20 +81,18 @@ small.l-footer_copyright {
    font-weight: 300;
    font-size: 0.77777777777778rem;
    width: 100%;
-   margin-top: 5vw;
-   padding-bottom: 0.5rem;
+   margin-top: 1vw;
+   padding-bottom: 1.5rem;
    text-align: center;
 
 
    @include g.mq(md) {
       font-size: 1rem;
-      margin-top: 3vw;
+      margin-top: 2vw;
    }
 
    @include g.mq(lg) {
       font-size: 0.875rem;
-      margin-top: 1.2vw;
-      margin-bottom: 0.6vw;
    }
 }
 

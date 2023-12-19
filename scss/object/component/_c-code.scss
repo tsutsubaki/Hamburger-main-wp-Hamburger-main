@@ -6,12 +6,17 @@
     font-family: "M+ 1m, Franklin Gothic Medium, Arial Narrow, Arial, sans-serif";
     font-size: 2.66666666666666vw;
     padding: 10vw 66vw 10vw 11vw;
-    margin: 1vw 5vw 7vw;
+    margin: 3vw 5vw 7vw;
     display: inline-block;
+
+    @include g.mq(md) {
+        padding: 10vw 64vw 10vw 6vw;
+    }
 
     @include g.mq(lg) {
         font-size: 1.6vw;
-        padding: 3vw 40vw 3vw 7vw;
+        padding: 3vw 36vw 3vw 5vw;
+        margin-bottom: 2vw;
     }
 }
 

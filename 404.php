@@ -13,7 +13,7 @@
     <div class="l-main__content">
 <div class="container">
 <div class="p-contents p-single__contents">
-    <h1>404 Not Found</h1>
+    <h1 class="l-font__color">404 Not Found</h1>
     <p>ページが見つかりませんでした</p>
     <a href="<?= get_site_url(); ?>">トップページへ戻る</a>
     <!-- <p>Topページは<a href="<?php echo esc_url(home_url('/')); ?>">こちら</a></p> -->
